@@ -3,17 +3,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int avg( int x, int y )
-{
-  int sum = x + x;
-  return sum / 2;
-}
+int avg( int x, int y ){
+  int sum = x + y;
+  return sum / 2;}
 
 void test_case_1_basic()
-{
-  printf("\n%s\n", __func__  );
-  ECE2400_CHECK_INT_EQ( avg( 10, 20 ), 15 );
-}
+{printf("\n%s\n", __func__  );
+  ECE2400_CHECK_INT_EQ( avg( 10, 20 ), 15 );}
 
 int main( int argc, char* argv[] )
 {
